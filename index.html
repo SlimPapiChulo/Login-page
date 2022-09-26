@@ -18,82 +18,134 @@
 </head>
 <body>
     <main class="sign-up">
-        <div class="login-container">
-            <p class="active">sign up</p>
-            <p>sign in</p>
+        <div class="sign-up-container">
+            <div class="login-container">
+                <p class="active">sign up</p>
+                <p>sign in</p>
+            </div>
+            <section class="main-container">
+                <h1>create an account</h1>
+                <div>
+                    <div>
+                        <i class="fas fa-user"></i>
+                        <input type="text" name="" id="fullName" placeholder="Full Name">
+                    </div>
+                    <div>
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" name="" id="email" class="emailSignUp" placeholder="Email">
+                    </div> 
+                    <div>
+                        <i class="fas fa-lock"></i>
+                        <input type="text" name="" id="signupPassword" class="one" placeholder="Password">
+                        <i class="fas fa-eye one"></i>
+                        <i class="fas fa-eye-slash first"></i>
+                    </div>
+                    <div>
+                        <i class="fas fa-lock"></i>
+                        <input type="text" name="" id="confirmPassword" placeholder="Confirm Password">
+                        <i class="fas fa-eye two"></i>
+                        <i class="fas fa-eye-slash second"></i>
+                    </div>
+                </div>
+                <button class="btn one">Sign Up</button>
+                <div class="alternative-login">
+                    <p>Or sign up with</p>
+                    <div class="socials">
+                        <button class="btn-social"><i class="fab fa-google"></i> Google</button>
+                        <button class="btn-social"><i class="fab fa-facebook"></i> Facebook</button>
+                    </div>
+                </div>
+            </section>
         </div>
-        <section class="main-container">
-            <h1>create an account</h1>
-            <div>
-                <div>
-                    <i class="fas fa-user"></i>
-                    <input type="text" name="" id="" placeholder="Full Name">
-                </div>
-                <div>
-                    <i class="fas fa-envelope"></i>
-                    <input type="email" name="" id="" placeholder="Email">
-                </div>
-                <div>
-                    <i class="fas fa-lock"></i>
-                    <input type="text" name="" id="" placeholder="Password">
-                    <i class="fas fa-eye"></i>
-                    <i class="fas fa-eye-slash"></i>
-                </div>
-                <div>
-                    <i class="fas fa-lock"></i>
-                    <input type="text" name="" id="" placeholder="Confirm Password">
-                    <i class="fas fa-eye"></i>
-                    <i class="fas fa-eye-slash"></i>
-                </div>
-            </div>
-            <button class="btn">Sign Up</button>
-        </section>
-        <section class="alternative-login">
-            <p>Or sign up with</p>
-            <div class="socials">
-                <button class="btn-social">Google</button>
-                <button class="btn-social">Facebook</button>
-            </div>
-        </section>
     </main>
 <!----------------- Second Part --------------------->
     <main class="sign-in">
-        <div class="login-container">
-            <p>sign up</p>
-            <p class="active">sign in</p>
-        </div>
-        <section class="main-container">
-            <h1>Welcome Back!</h1>
-            <div>
+        <div class="sign-in-container">
+            <div class="login-container">
+                <p>sign up</p>
+                <p>sign in</p>
+            </div>
+            <section class="main-container">
+                <h1>Welcome Back!</h1>
                 <div>
-                    <i class="fas fa-envelope"></i>
-                    <input type="email" name="" id="" placeholder="Email">
+                    <div class="sign-in-input">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" name="" id="email" class="emailSignIn" placeholder="Email">
+                    </div>
+                    <div class="sign-in-input">
+                        <i class="fas fa-lock"></i>
+                        <input type="text" name="" id="signinPassword" class="two" placeholder="Password">
+                        <i class="fas fa-eye three"></i>
+                        <i class="fas fa-eye-slash third"></i>
+                    </div>
                 </div>
-                <div>
-                    <i class="fas fa-lock"></i>
-                    <input type="text" name="" id="" placeholder="Password">
-                    <i class="fas fa-eye"></i>
-                    <i class="fas fa-eye-slash"></i>
-                </div>
-                <div>
+                <div class="sign-in-help">
                     <div>
                         <input type="checkbox" name="Remember Password" id="remember">
                         <label for="remember">Remember Password</label>
                     </div>
                     <p>Forgot Password?</p>
                 </div>
-            </div>
-            <button class="btn">Sign Up</button>
-        </section>
-        <section class="alternative-login">
-            <p>Or sign up with</p>
-            <div class="socials">
-                <button class="btn-social">Google</button>
-                <button class="btn-social">Facebook</button>
-            </div>
-        </section>
+                <button class="btn two">Log In</button>
+                <div class="alternative-login">
+                    <p>Or sign up with</p>
+                    <div class="socials">
+                        <button class="btn-social"><i class="fab fa-google"></i> Google</button>
+                        <button class="btn-social"><i class="fab fa-facebook"></i> Facebook</button>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
 
+    <!-- Pop up -->
+    <article class="pop-up first">
+        <div class="modal-one">
+            <i class="fas fa-times one"></i>
+            <h1>Success!</h1>
+            <p>Your account has been created.</p>
+            <div class="icon">
+                <i class="far fa-check-circle"></i>
+            </div>
+            <button class="modal-btn">Continue</button>
+        </div>
+        <div class="modal-two">
+            <i class="fas fa-times two"></i>
+            <h1>Heyo!</h1>
+            <p>Input your details Man.</p>
+            <div class="icon">
+                <i class="far fa-times-circle"></i>
+            </div>
+            <button class="modal-btn-back">Try again</button>
+        </div>
+        <div class="modal-three">
+            <i class="fas fa-times three"></i>
+            <h1>Yikes!</h1>
+            <p>Wrong details, password doesn't match</p>
+            <div class="icon">
+                <i class="far fa-times-circle"></i>
+            </div>
+            <button class="modal-btn-back">Try again</button>
+        </div>
+        <div class="modal-four">
+            <i class="fas fa-times four"></i>
+            <h1>Yikes!</h1>
+            <p>Wrong Email or Password</p>
+            <div class="icon">
+                <i class="far fa-times-circle"></i>
+            </div>
+            <button class="modal-btn-back">Try again</button>
+        </div>
+        <div class="modal-five">
+            <i class="fas fa-times one"></i>
+            <h1>Success!</h1>
+            <div class="icon">
+                <i class="far fa-check-circle"></i>
+            </div>
+            <p>Access Granted.</p>
+            <p>Welcome to our page, Enjoy.</p>
+        </div>
+    </article>
     <script src="./app.js"></script>
 </body>
 </html>
